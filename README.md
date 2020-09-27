@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ece07044-6cc6-459e-808b-92485f0ba479/deploy-status)](https://app.netlify.com/sites/gatsby-tailwind-emotion-starter-demo/deploys)
 
 <p align="center">
@@ -221,3 +222,7 @@ To learn more about Gatsby, use the following resources:
 - [Gatsby Tutorial](https://www.gatsbyjs.com/tutorial/) - a lovely Gatsby tutorial.
 
 You can check out [the Gatsby GitHub repository](https://github.com/gatsbyjs/gatsby) - your feedback and contributions are welcome!
+=======
+# heksencoven
+heksencoven public gatsby-tailwind-emotion 
+>>>>>>> 74d96a38ea307359e80346d334fe1d8cd5139ab6
