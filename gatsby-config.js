@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Tailwind CSS ➕ Emotion Starter`,
+    title: `HekseCoven`,
     description: `A bare-bones Tailwind CSS + Emotion starter to kickoff your project.`,
     author: `@pauloelias`,
   },

@@ -2,3 +2,21 @@
   Inject Tailwind's base styles and use the Twin Macro with emotion to use
   the rest of Tailwind's classes in the project
 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: Fondamento;
+  src: url("../fonts/Fondamento/Fondamento-Regular.ttf");
+}
+@font-face {
+  font-family: Fondamento I;
+  src: url("../fonts/Fondamento/Fondamento-Italic.ttf");
+}
+:root {
+  --main-bg-color: #11001c;
+  --text-color: #e0e2db;
+  --highlight: #7e54c6;
+  --purple: #35012c;
+  --pale-silver: #bfb5af;
+}
