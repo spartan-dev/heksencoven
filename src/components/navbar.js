@@ -1,14 +1,18 @@
 import React, { useState } from "react"
 import indice from "../images/goodes.png"
+import { Link } from "gatsby"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <header className="bg-gray-900 sm:flex sm:justify-between sm:px-4 py-3">
+    <header className="bg-black h-20 sm:flex sm:justify-between items-center sm:px-4 py-3">
       <div className="flex items-center justify-between px-4 py-3 sm:p-0">
-        <div>
-          <img className="h-8" src={indice} alt="the goodes" />
-        </div>
+        <Link to="/">
+          <div>
+            <img className="h-8" src={indice} alt="the goodes" />
+          </div>
+        </Link>
+
         <div className="sm:hidden">
           <button
             onClick={() => setOpen(!isOpen)}
@@ -46,24 +50,24 @@ const Header = () => {
           isOpen ? "block " : "hidden"
         } px-2 pt-2 pb-4" sm:flex sm:p-0 `}
       >
-        <a
-          href="#"
+        <Link
+          to="/about"
           className="block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded"
         >
-          acerca
-        </a>
-        <a
-          href="#"
+          Cueva
+        </Link>
+        <Link
+          to="/blog"
           className="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded sm:mt-0 sm:ml-2"
         >
-          blog
-        </a>
-        <a
-          href="#"
+          Blog
+        </Link>
+        <Link
+          to="/contacto"
           className="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded sm:mt-0 sm:ml-2"
         >
-          contacto
-        </a>
+          Contacto
+        </Link>
       </div>
     </header>
   )

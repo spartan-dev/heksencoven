@@ -13,10 +13,40 @@
   font-family: Fondamento I;
   src: url("../fonts/Fondamento/Fondamento-Italic.ttf");
 }
+@font-face {
+  font-family: Cinzel;
+  src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
+}
+@font-face {
+  font-family: Cinzel B;
+  src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf");
+}
+@font-face {
+  font-family: Cinzel Bl;
+  src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf");
+}
+
 :root {
   --main-bg-color: #11001c;
   --text-color: #e0e2db;
   --highlight: #7e54c6;
   --purple: #35012c;
   --pale-silver: #bfb5af;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 40%,
+    #000000 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
