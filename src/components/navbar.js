@@ -3,9 +3,34 @@ import indice from "../images/goodes.png"
 import { Link } from "gatsby"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
-
+  const mobilNav = () => (
+    <div
+      className={`${
+        isOpen ? "block " : "hidden"
+      } px-2 pt-2 pb-4" w-48 h-48 sm:flex sm:p-0 z-50 absolute bg-white rounded-lg  shadow-lg mt-4 ml-4 transition duration-1000 ease-in-out  `}
+    >
+      <Link
+        to="/about"
+        className="block px-3 py-2 text-gray-800 font-semibold hover:bg-gray-800 hover:text-white rounded"
+      >
+        Cueva mobile
+      </Link>
+      <Link
+        to="/blog"
+        className="mt-1 block px-3 py-2 text-gray-800 font-semibold hover:bg-gray-800  hover:text-white rounded sm:mt-0 sm:ml-2"
+      >
+        Blog
+      </Link>
+      <Link
+        to="/contacto"
+        className="mt-1 block px-3 py-2 text-gray-800 font-semibold hover:bg-gray-800  hover:text-white rounded sm:mt-0 sm:ml-2"
+      >
+        Contacto
+      </Link>
+    </div>
+  )
   return (
-    <header className="bg-black h-20 sm:flex sm:justify-between items-center sm:px-4 py-3">
+    <header className="bg-main h-20 sm:flex sm:justify-between items-center sm:px-4 py-3">
       <div className="flex items-center justify-between px-4 py-3 sm:p-0">
         <Link to="/">
           <div>
@@ -45,30 +70,34 @@ const Header = () => {
           </button>
         </div>
       </div>
-      <div
-        className={`${
-          isOpen ? "block " : "hidden"
-        } px-2 pt-2 pb-4" sm:flex sm:p-0 `}
-      >
-        <Link
-          to="/about"
-          className="block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded"
+      {isOpen ? (
+        mobilNav()
+      ) : (
+        <div
+          className={`${
+            isOpen ? "block" : "hidden"
+          } px-2 pt-2 pb-4" sm:flex sm:p-0 `}
         >
-          Cueva
-        </Link>
-        <Link
-          to="/blog"
-          className="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded sm:mt-0 sm:ml-2"
-        >
-          Blog
-        </Link>
-        <Link
-          to="/contacto"
-          className="mt-1 block px-2 py-1 text-white font-semibold hover:bg-gray-800 rounded sm:mt-0 sm:ml-2"
-        >
-          Contacto
-        </Link>
-      </div>
+          <Link
+            to="/about"
+            className="block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded"
+          >
+            Cueva
+          </Link>
+          <Link
+            to="/blog"
+            className="mt-1 block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
+          >
+            Blog
+          </Link>
+          <Link
+            to="/contacto"
+            className="mt-1 block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
+          >
+            Contacto
+          </Link>
+        </div>
+      )}
     </header>
   )
 }
