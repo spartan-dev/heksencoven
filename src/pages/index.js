@@ -6,6 +6,7 @@ import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import "../styles/app.css"
 import InfoCard from "../components/infocard"
+import Separator from "../components/separator"
 const Index = (props) => {
   return (
     <div>
@@ -47,6 +48,7 @@ const Index = (props) => {
             </div>
           </BackgroundImage>
         </Hero>
+        <Separator />
         <InfoCard position="left" image={props.data.infocard1} />
         <InfoCard position="right" image={props.data.infocard2} />
       </Layout>

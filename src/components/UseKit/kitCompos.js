@@ -7,8 +7,8 @@ export const Title1 = styled.div`
 `
 
 export const Title2 = styled.div`
-  ${tw`text-silver text-center text-3xl font-bold tracking-widest leading-relaxed shadow-md mt-3 mb-3`}
-  font-family:'Cinzel'
+  ${tw` px-3 py-3 text-silver text-center text-3xl font-bold tracking-widest leading-relaxed shadow-md mt-3 mb-3`};
+  font-family: "Cinzel";
 `
 
 export const ButtonPri = styled.button`
@@ -32,7 +32,9 @@ text-purplelight font-semibold
       ? "15%"
       : ""};
 `
-
+export const Contenedor = styled.div`
+  ${tw`mt-3 mb-3 bg-palesilver w-full  px-2 py-3 flex justify-center items-center`};
+`
 /* export const Title2 = styled.div`
 ${tw``}
 `; */

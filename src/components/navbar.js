@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import indice from "../images/goodes.png"
+import indice from "../images/malefi.png"
 import { Link } from "gatsby"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
@@ -30,11 +30,11 @@ const Header = () => {
     </div>
   )
   return (
-    <header className="bg-main h-20 sm:flex sm:justify-between items-center sm:px-4 py-3">
-      <div className="flex items-center justify-between px-4 py-3 sm:p-0">
+    <header className="bg-main h-32 sm:flex sm:justify-between items-center sm:px-4 py-3">
+      <div className="flex items-center justify-between px-6 py-3 sm:p-0">
         <Link to="/">
-          <div>
-            <img className="h-8" src={indice} alt="the goodes" />
+          <div className="px-3">
+            <img className="w-16" src={indice} alt="the goodes" />
           </div>
         </Link>
 
@@ -80,19 +80,19 @@ const Header = () => {
         >
           <Link
             to="/about"
-            className="block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded"
+            className="block text-2xl px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded"
           >
             Cueva
           </Link>
           <Link
             to="/blog"
-            className="mt-1 block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
+            className="mt-1 text-2xl block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
           >
             Blog
           </Link>
           <Link
             to="/contacto"
-            className="mt-1 block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
+            className="mt-1 text-2xl block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
           >
             Contacto
           </Link>
