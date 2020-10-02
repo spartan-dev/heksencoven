@@ -6,3 +6,4 @@ yarn.lock
 /public/
 /src/
 gatsby-config.js
+tailwind.config.js

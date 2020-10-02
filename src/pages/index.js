@@ -7,6 +7,7 @@ import BackgroundImage from "gatsby-background-image"
 import "../styles/app.css"
 import InfoCard from "../components/infocard"
 import Separator from "../components/separator"
+import SectionShop from "../components/sectionshop"
 const Index = (props) => {
   return (
     <div>
@@ -48,9 +49,11 @@ const Index = (props) => {
             </div>
           </BackgroundImage>
         </Hero>
-        <Separator />
+        <Separator title="HekseCoven" />
         <InfoCard position="left" image={props.data.infocard1} />
         <InfoCard position="right" image={props.data.infocard2} />
+        <Separator title="Suscripciones Mixtas" />
+        <SectionShop />
       </Layout>
     </div>
   )

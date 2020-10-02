@@ -7,10 +7,26 @@ export const Title1 = styled.div`
 `
 
 export const Title2 = styled.div`
-  ${tw` px-3 py-3 text-silver text-center text-3xl font-bold tracking-widest leading-relaxed shadow-md mt-3 mb-3`};
+  ${(props) =>
+    props.space
+      ? tw` xl:text-4xl lg:text-4xl tracking-wide  px-3 py-3 text-purplelight text-center text-3xl font-bold tracking-widest leading-relaxed shadow-lg mt-3 mb-3`
+      : tw` px-3 py-3 text-silver text-center text-3xl font-bold tracking-widest leading-relaxed shadow-lg mt-3 mb-3`};
+
+  font-family: ${(props) => (props.font ? "Cinzel Bl" : "Cinzel")};
+`
+export const Title3 = styled.h3`
+  ${tw`text-silver`};
   font-family: "Cinzel";
 `
-
+export const TitleSection = styled.h1`
+  font-family: "Cinzel Bl";
+  font-weight: 700;
+  font-size: 43px;
+  color: #7e54c6;
+  letter-spacing: 7px;
+  line-height: 1.9em;
+  padding-left: 12rem;
+`
 export const ButtonPri = styled.button`
   ${tw`bg-transparent hover:bg-purplelight
   mt-3 mb-3 
@@ -30,7 +46,7 @@ text-purplelight font-semibold
       ? "25%"
       : props.width === "small"
       ? "15%"
-      : ""};
+      : "99%"};
 `
 export const Contenedor = styled.div`
   ${tw`mt-3 mb-3 bg-palesilver w-full  px-2 py-3 flex justify-center items-center`};
