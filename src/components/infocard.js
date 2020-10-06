@@ -5,16 +5,16 @@ const InfoCard = ({ image, position }) => {
   return (
     <div className="px-8 py-8">
       {position === "right" ? (
-        <div className="flex ">
-          <div className=" rounded-lg mr-8  w-1/2 bg-purplelight text-3xl flex items-center px-6 py-2 bg-gradient-to-r from-purple  ">
-            <p>
+        <div className="flex flex-col md:flex-row  md:h-auto">
+          <div className=" md:w-1/2   h-auto rounded-lg   bg-purplelight text-3xl flex items-center px-6 py-2 bg-gradient-to-r from-purple  ">
+            <p className="text-base   text-palesilver sm:text-xl md:text-2xl xl:text-4xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               praesentium minima aspernatur facere, qui ex aperiam debitis,
               voluptatum earum est ducimus quaerat, veritatis ut laboriosam
               beatae dolores? Saepe, ea. Explicabo!
             </p>
           </div>
-          <div className=" w-1/2 h-auto ">
+          <div className=" h-auto w-auto  md:w-1/2 md:ml-4 md:h-auto">
             <Img
               className="rounded-lg"
               fluid={image.childImageSharp.fluid}
@@ -27,20 +27,20 @@ const InfoCard = ({ image, position }) => {
           </div>
         </div>
       ) : position === "left" ? (
-        <div className="flex">
-          <div className=" w-1/2 h-auto ">
+        <div className="flex flex-col md:flex-row md:h-auto">
+          <div className="h-auto w-auto  md:w-1/2 md:mr-4 md:h-auto">
             <Img
-              className=" rounded-lg"
+              className=" rounded-lg w-full h-full"
               fluid={image.childImageSharp.fluid}
               alt={image.childImageSharp.fluid.originalName}
-              style={{ height: "100%", width: "100%" }}
+              // style={{ height: "100%", width: "100%" }}
               imgStyle={{
                 objectFit: "cover",
               }}
             />
           </div>
-          <div className="ml-8 rounded-lg w-1/2  text-palesilver  bg-purplelight text-3xl flex items-center px-6 py-2  bg-gradient-to-l from-purple ">
-            <p>
+          <div className="md:w-1/2   rounded-lg  bg-purplelight  flex items-center px-6 py-2  bg-gradient-to-l from-purple ">
+            <p className="text-base   text-palesilver sm:text-xl md:text-2xl xl:text-4xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
               praesentium minima aspernatur facere, qui ex aperiam debitis,
               voluptatum earum est ducimus quaerat, veritatis ut laboriosam

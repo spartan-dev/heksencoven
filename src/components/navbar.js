@@ -7,7 +7,7 @@ const Header = () => {
     <div
       className={`${
         isOpen ? "block " : "hidden"
-      } px-2 pt-2 pb-4" w-48 h-48 sm:flex sm:p-0 z-50 absolute bg-white rounded-lg  shadow-lg mt-4 ml-4 transition duration-1000 ease-in-out  `}
+      } px-2 pt-2 pb-4 w-10/12  h-48 sm:flex sm:p-0 z-50 absolute bg-white rounded-lg  shadow-lg mt-4 ml-4 transition duration-2000 ease-in-out`}
     >
       <Link
         to="/about"
@@ -34,7 +34,7 @@ const Header = () => {
       <div className="flex items-center justify-between px-6 py-3 sm:p-0">
         <Link to="/">
           <div className="px-3">
-            <img className="w-16" src={indice} alt="the goodes" />
+            <img className="w-16 h-24" src={indice} alt="the goodes" />
           </div>
         </Link>
 

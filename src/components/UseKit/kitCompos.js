@@ -11,7 +11,8 @@ export const Title2 = styled.div`
     props.space
       ? tw` xl:text-4xl lg:text-4xl tracking-wide  px-3 py-3 text-purplelight text-center text-3xl font-bold tracking-widest leading-relaxed shadow-lg mt-3 mb-3`
       : tw` px-3 py-3 text-silver text-center text-3xl font-bold tracking-widest leading-relaxed shadow-lg mt-3 mb-3`};
-
+  text-align: left;
+  padding-left: 2rem;
   font-family: ${(props) => (props.font ? "Cinzel Bl" : "Cinzel")};
 `
 export const Title3 = styled.h3`

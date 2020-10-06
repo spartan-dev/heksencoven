@@ -18,7 +18,7 @@ const Index = (props) => {
             fluid={props.data.indexImage.childImageSharp.fluid}
           >
             <div
-              className="py-3 px-3 absolute b-solid border-4
+              className="py-3 px-3 w-10/12 absolute b-solid border-4
              border-palesilver  flex flex-col justify-center 
              items-center  shadow-md
              sm:max-w-lg
@@ -29,7 +29,7 @@ const Index = (props) => {
             >
               <Title1 color> Liberi et Cantatus</Title1>
               <Title2>Witchcraft & Magic Supplies and witches stuff</Title2>
-              <ButtonPri width="medium">
+              <ButtonPri width="large">
                 Go now{" "}
                 <svg
                   class="w-6 h-6"

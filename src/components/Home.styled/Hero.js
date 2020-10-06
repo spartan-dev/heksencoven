@@ -4,5 +4,6 @@ export const Hero = tw.div`
    bg-center
    h-full
    bg-cover bg-center
+   
 
 `
