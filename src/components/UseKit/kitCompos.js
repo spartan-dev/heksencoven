@@ -3,20 +3,25 @@ import tw, { styled } from "twin.macro"
 export const Title1 = styled.div`
   ${tw`text-silver text-center text-4xl font-bold mt-3 mb-3`}
   font-family:'Fondamento';
-  color: ${(props) => (props.color ? " #e0e2db" : "text-gray-300")};
+  color: ${(props) => (props.color ? "#e0e2db" : "text-gray-300")};
 `
 
 export const Title2 = styled.div`
   ${(props) =>
     props.space
-      ? tw` xl:text-4xl lg:text-4xl tracking-wide  px-3 py-3 text-purplelight text-center text-3xl font-bold tracking-widest leading-relaxed shadow-lg mt-3 mb-3`
-      : tw` px-3 py-3 text-silver text-center text-3xl font-bold tracking-widest leading-relaxed shadow-lg mt-3 mb-3`};
-  text-align: left;
+      ? tw` xl:text-4xl lg:text-4xl tracking-wide  px-3 py-3 text-purplelight text-center text-3xl font-bold tracking-widest leading-relaxed  mt-3 mb-3`
+      : tw` px-3 py-3 text-silver text-center text-3xl font-bold tracking-widest leading-relaxed mt-3 mb-3`};
+  text-align: ${(props) =>
+    props.align === "left"
+      ? "left"
+      : props.align === "right"
+      ? "right"
+      : "center"};
   padding-left: 2rem;
   font-family: ${(props) => (props.font ? "Cinzel Bl" : "Cinzel")};
 `
 export const Title3 = styled.h3`
-  ${tw`text-silver`};
+  ${tw`sm:text-left  xl:text-xl lg:text-xl tracking-wide  py-3  text-center font-bold   mt-3 mb-3`};
   font-family: "Cinzel";
 `
 export const TitleSection = styled.h1`
@@ -29,14 +34,17 @@ export const TitleSection = styled.h1`
   padding-left: 12rem;
 `
 export const ButtonPri = styled.button`
-  ${tw`bg-transparent hover:bg-purplelight
+  ${tw`bg-transparent 
   mt-3 mb-3 
-text-purplelight font-semibold
-  hover:text-white py-2 px-4
+  text-purplelight
+  font-semibold 
+  py-2 px-2
   border border-purplelight 
-  hover:border-transparent rounded
   text-2xl
   flex justify-evenly items-center
+  hover:bg-purplelight 
+  hover:text-white 
+  hover:border-transparent
   `};
 
   font-family: "Fondamento";
@@ -50,7 +58,7 @@ text-purplelight font-semibold
       : "99%"};
 `
 export const Contenedor = styled.div`
-  ${tw`mt-3 mb-3 bg-palesilver w-full  px-2 py-3 flex justify-center items-center`};
+  ${tw` mb-56 bg-palesilver w-full  flex justify-center items-center`};
 `
 /* export const Title2 = styled.div`
 ${tw``}

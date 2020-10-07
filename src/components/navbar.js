@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import indice from "../images/malefi.png"
+import indice from "../images/Hekse.png"
 import { Link } from "gatsby"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
@@ -34,7 +34,7 @@ const Header = () => {
       <div className="flex items-center justify-between px-6 py-3 sm:p-0">
         <Link to="/">
           <div className="px-3">
-            <img className="w-16 h-24" src={indice} alt="the goodes" />
+            <img className="w-24 h-24" src={indice} alt="the goodes" />
           </div>
         </Link>
 

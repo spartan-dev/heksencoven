@@ -10,19 +10,19 @@ const Footer = () => {
         <div className=" lg:inline-grid grid-cols-3 gap-x-4 lg:px-16 xl:flex xl:justify-around xl:px-8">
           <div className="text-left mt-6 mb-6 text-silver sm:text-left sm:px-12  ">
             <Title3> Contacto</Title3>
-            <p className="mt-4">
-              <ul className="text-left ">
+            <section className="mt-4">
+              <ul className="text-left">
                 <li> Visit Us: 1506 Wyandotte St. East</li>
                 <li>Windsor, Ontario</li>
                 <li>Canada, N9A 3L2</li>
                 <li>Call Us: 519-915-2111</li>
                 <li>Email: info@smudgemetaphysical.com</li>
               </ul>
-            </p>
+            </section>
           </div>
-          <div className="text-left mt-6 mb-6 text-silver sm: sm:text-left sm:px-12 lg:text-center ">
+          <div className="text-left mt-6 mb-6 text-silver  sm:text-left sm:px-12 lg:text-center ">
             <Title3>Horarios de Operacion</Title3>
-            <p className="mt-4">
+            <section className="mt-4">
               <ul className="text-left lg:text-center xl:text-left">
                 <li>Monday & Tuesday: Closed</li>
                 <li>Wednesday: 11am - 5pm</li>
@@ -31,9 +31,9 @@ const Footer = () => {
                 <li>Saturday: 11am - 5pm</li>
                 <li> Sunday: 12pm - 4pm</li>
               </ul>
-            </p>
+            </section>
           </div>
-          <div className="text-center  mt-6 mb-6 text-silver">
+          <div className=" mt-6 mb-6 text-silver  sm:text-left sm:px-12">
             <Title3>Redes Sociales</Title3>
             <div className="mt-4 inline-grid grid-cols-3 gap-x-4 lg:py-12">
               <span className="">
