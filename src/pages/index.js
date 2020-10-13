@@ -1,12 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Hero } from "../components/Home.styled/Hero"
-import {
-  Title1,
-  Title2,
-  Title3,
-  ButtonPri,
-} from "../components/UseKit/kitCompos"
+import { Title1, Title2, ButtonPri } from "../components/UseKit/kitCompos"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import smokeTop from "../images/bigsmokeTope.png"

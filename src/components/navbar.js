@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import indice from "../images/Hekse.png"
+import indice from "../images/VERSION_1SIN_FONDO.png"
 import { Link } from "gatsby"
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
@@ -7,7 +7,7 @@ const Header = () => {
     <div
       className={`${
         isOpen ? "block " : "hidden"
-      } px-2 pt-2 pb-4 w-10/12  h-48 sm:flex sm:p-0 z-50 absolute bg-white rounded-lg  shadow-lg mt-4 ml-4 transition duration-2000 ease-in-out`}
+      } px-2 pt-2 pb-4 w-10/12  h-48 mt-64  sm:flex sm:p-0 z-50 absolute bg-white rounded-lg  shadow-lg ml-4 transition duration-2000 ease-in-out`}
     >
       <Link
         to="/about"
@@ -30,45 +30,44 @@ const Header = () => {
     </div>
   )
   return (
-    <header className="bg-main h-32 sm:flex sm:justify-between items-center sm:px-4 py-3">
-      <div className="flex items-center justify-between px-6 py-3 sm:p-0">
+    <header className="bg-main h-32 flex justify-between sm:flex sm:justify-between items-center sm:px-4 py-3">
+      <div className="flex items-center justify-between px-3 py-3 sm:p-0">
         <Link to="/">
-          <div className="px-3">
-            <img className="w-24 h-24" src={indice} alt="the goodes" />
+          <div className="px-3 py-3  sm:w-56 sm:h-56  xl:w-56 xl:h-56 ">
+            <img className="w-full" src={indice} alt="the goodes" />
           </div>
         </Link>
-
-        <div className="sm:hidden">
-          <button
-            onClick={() => setOpen(!isOpen)}
-            type="button"
-            className="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+      </div>
+      <div className="sm:hidden flex justify-center px-6">
+        <button
+          onClick={() => setOpen(!isOpen)}
+          type="button"
+          className="block text-gray-500 hover:text-white focus:text-white focus:outline-none"
+        >
+          <svg
+            className="w-6 h-6 block"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              className="w-6 h-6 block"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {isOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-                ></path>
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                ></path>
-              )}
-            </svg>
-          </button>
-        </div>
+            {isOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
+              ></path>
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            )}
+          </svg>
+        </button>
       </div>
       {isOpen ? (
         mobilNav()
