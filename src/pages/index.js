@@ -1,22 +1,31 @@
 import React from "react"
 import Layout from "../components/layout"
 import { Hero } from "../components/Home.styled/Hero"
+import Seo from "../components/seo"
 import { Title1, Title2, ButtonPri } from "../components/UseKit/kitCompos"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import smokeTop from "../images/bigsmokeTope.png"
-import smokeBottom from "../images/smokeBottom.png"
+import smokeTop from "../images/usein/bigsmokeTope.png"
+import smokeBottom from "../images/usein/smokeBottom.png"
 import "../styles/app.css"
 import InfoCard from "../components/infocard"
 import Separator from "../components/separator"
 import SectionShop from "../components/sectionshop"
+import Image from "../components/image"
 const Index = (props) => {
   return (
     <div>
       <Layout>
+        <Seo title="Home" />
         <Hero>
-          <div className="absolute xl:w-full">
-            <img className="w-full" src={smokeTop} alt="smoke deco top" />
+          <div className="absolute w-full xl:w-full  h-auto lg:w-full md:w-full sm:w-full">
+            <Image
+              className="w-full "
+              filename="bigsmokeTope"
+              alt="smoke deco top"
+              objectFit="cover"
+              objectPosition="50% 50%"
+            />
           </div>
           <BackgroundImage
             className="hero"
@@ -53,19 +62,21 @@ const Index = (props) => {
               </ButtonPri>
             </div>
           </BackgroundImage>
-          <div className="absolute xl:w-full  bottom-0">
-            <img
+          <div className="w-full absolute h-auto xl:w-full lg:w-full md:w-full sm:w-full bottom-0">
+            <Image
               className="w-full absolute"
-              src={smokeBottom}
+              filename="smokeBottom"
               alt="smoke deco bottom"
+              objectFit="cover"
+              objectPosition="50% 50%"
             />
           </div>
         </Hero>
 
-        <Separator title="HekseCoven" />
+        <Separator title="HekseCoven" ornate="ornate3" />
         <InfoCard position="left" image={props.data.infocard1} />
         <InfoCard position="right" image={props.data.infocard2} />
-        <Separator title="Suscripciones Mixtas" />
+        <Separator title="Suscripciones" ornate="ornate2" />
         <SectionShop />
       </Layout>
     </div>
@@ -76,7 +87,7 @@ export default Index
 
 export const pageQuery = graphql`
   query {
-    indexImage: file(relativePath: { eq: "ritual.jpg" }) {
+    indexImage: file(relativePath: { regex: "/ritual.jpg/" }) {
       childImageSharp {
         fluid(maxWidth: 1800) {
           ...GatsbyImageSharpFluid
@@ -84,7 +95,7 @@ export const pageQuery = graphql`
       }
     }
 
-    infocard1: file(relativePath: { eq: "libro.jpg" }) {
+    infocard1: file(relativePath: { regex: "/libro.jpg/" }) {
       childImageSharp {
         fluid {
           originalName
@@ -92,7 +103,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    infocard2: file(relativePath: { eq: "hero.jpg" }) {
+    infocard2: file(relativePath: { regex: "/hero.jpg/" }) {
       childImageSharp {
         fluid {
           originalName

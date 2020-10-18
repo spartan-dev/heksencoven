@@ -1,5 +1,5 @@
 import React from "react"
-import { ButtonPri, Title2, TitleSection } from "../components/UseKit/kitCompos"
+import { ButtonPri, Title2 } from "../components/UseKit/kitCompos"
 
 const SectionShop = () => {
   return (

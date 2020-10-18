@@ -35,16 +35,16 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:type`,
+          content: "website",
+        },
+        {
           property: `og:title`,
-          content: title,
+          content: metaDescription,
         },
         {
           property: `og:description`,
           content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
         },
         {
           name: `twitter:card`,
@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `es`,
   meta: [],
   description: ``,
 }

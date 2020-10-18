@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import indice from "../images/VERSION_1SIN_FONDO.png"
 import { Link } from "gatsby"
+import Image from "./image"
+
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
   const mobilNav = () => (
@@ -31,10 +32,16 @@ const Header = () => {
   )
   return (
     <header className="bg-main h-32 flex justify-between sm:flex sm:justify-between items-center sm:px-4 py-3">
-      <div className="flex items-center justify-between px-3 py-3 sm:p-0">
+      <div className="flex items-center justify-between px-3 py-3 sm:p-0 ">
         <Link to="/">
-          <div className="px-3 py-3  sm:w-56 sm:h-56  xl:w-56 xl:h-56 ">
-            <img className="w-full" src={indice} alt="the goodes" />
+          <div className="w-56 h-56  sm:w-56 sm:h-56  xl:w-56 xl:h-56  px-3 py-3">
+            <Image
+              className="w-full"
+              filename="VERSION_1SIN_FONDO"
+              alt="Hekse Coven"
+              objectFit="cover"
+              objectPosition="50% 50%"
+            />
           </div>
         </Link>
       </div>

@@ -1,8 +1,8 @@
 import React from "react"
 import { Title3, ButtonPri } from "../components/UseKit/kitCompos"
-import face from "../images/face.svg"
-import insta from "../images/insta.svg"
-import whats from "../images/whats.svg"
+import face from "../images/svg/face.svg"
+import insta from "../images/svg/insta.svg"
+import whats from "../images/svg/whats.svg"
 const Footer = () => {
   return (
     <footer className=" bg-purple py-3 px-3 w-full">

@@ -10,7 +10,7 @@ export const Title2 = styled.div`
   ${(props) =>
     props.space
       ? tw` xl:text-4xl lg:text-4xl tracking-wide  px-3 py-3 text-purplelight text-center text-3xl font-bold tracking-widest leading-relaxed  mt-3 mb-3`
-      : tw` px-3 py-3 text-silver text-center text-3xl font-bold tracking-widest leading-relaxed mt-3 mb-3`};
+      : tw` px-3 py-3  text-silver text-center text-3xl font-bold tracking-widest leading-relaxed mt-3 mb-3`};
   text-align: ${(props) =>
     props.align === "left"
       ? "left"
@@ -57,9 +57,9 @@ export const ButtonPri = styled.button`
       ? "15%"
       : "99%"};
 `
-export const Contenedor = styled.div`
-  ${tw` mb-56 bg-palesilver w-full  flex justify-center items-center`};
+export const ContenedorSection = styled.div`
+  ${tw`  
+  flex
+  justify-center
+ `};
 `
-/* export const Title2 = styled.div`
-${tw``}
-`; */
