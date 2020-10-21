@@ -5,8 +5,6 @@ import Seo from "../components/seo"
 import { Title1, Title2, ButtonPri } from "../components/UseKit/kitCompos"
 import { graphql } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
-import smokeTop from "../images/usein/bigsmokeTope.png"
-import smokeBottom from "../images/usein/smokeBottom.png"
 import "../styles/app.css"
 import InfoCard from "../components/infocard"
 import Separator from "../components/separator"
@@ -32,6 +30,7 @@ const Index = (props) => {
             fluid={props.data.indexImage.childImageSharp.fluid}
           >
             <div
+              data-aos="zoom-in"
               className="py-3 px-3 w-10/12 absolute b-solid border-4
              border-palesilver  flex flex-col justify-center 
              items-center  shadow-md

@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `HekseCoven`,
@@ -9,6 +13,13 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.GATSBY_CONTENFUL_SPACE_ID,
+        accessToken: process.env.GATSBY_CONTENTFUL_ACCES_TOKEN,
+      },
+    },
     {
       resolve: "gatsby-plugin-postcss",
       options: {

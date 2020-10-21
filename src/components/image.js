@@ -27,7 +27,6 @@ const Image = (props) => {
         const image = data.images.edges.find((image) => {
           return image.node.relativePath.includes(filename)
         })
-        console.log(image, "alones")
         if (!image)
           return (
             <svg

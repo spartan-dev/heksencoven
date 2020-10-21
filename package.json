@@ -39,6 +39,8 @@
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
+    "aos": "^3.0.0-beta.6",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.24.65",
     "gatsby-background-image": "^1.1.2",
     "gatsby-image": "^2.4.21",
@@ -47,12 +49,14 @@
     "gatsby-plugin-postcss": "^2.3.12",
     "gatsby-plugin-react-helmet": "^3.3.11",
     "gatsby-plugin-sharp": "^2.6.36",
+    "gatsby-source-contentful": "^3.0.1",
     "gatsby-source-filesystem": "^2.3.30",
     "gatsby-transformer-sharp": "^2.5.15",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
+    "slash": "^3.0.0",
     "twin.macro": "^1.10.0"
   },
   "devDependencies": {

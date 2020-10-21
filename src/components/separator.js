@@ -19,7 +19,11 @@ const Separator = ({ title, ornate }) => {
       <section className="absolute   max-w-full bg-pale-silver">
         <Title2>{title}</Title2>
       </section>
-      <div className="w-5/6 sm:w-3/6 mt-0  sm:mt-4 h-40 lg:h-48 xl:h-64 flex justify-center ">
+      <div
+        data-aos="zoom-in-up"
+        data-aos-once="false"
+        className="w-5/6 sm:w-3/6 mt-0  sm:mt-4 h-40 lg:h-48 xl:h-64 flex justify-center "
+      >
         <Image
           className="w-full h-auto"
           filename={ornate}
