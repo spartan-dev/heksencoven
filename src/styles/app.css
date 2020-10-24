@@ -71,7 +71,8 @@ body {
   z-index: 10;
   position: relative;
 }
-
+.passText {
+}
 /* bottom: 0;
 height: 50px;
 width: 100%;

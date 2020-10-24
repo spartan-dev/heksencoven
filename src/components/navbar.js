@@ -31,7 +31,7 @@ const Header = () => {
     </div>
   )
   return (
-    <header className="bg-main h-32 flex justify-between sm:flex sm:justify-between items-center sm:px-4 py-3">
+    <header className="bg-black h-32 flex justify-between sm:flex sm:justify-between items-center sm:px-4 py-3">
       <div className="flex items-center justify-between px-3 py-3 sm:p-0 ">
         <Link to="/">
           <div className="w-56 h-56  sm:w-56 sm:h-56  xl:w-56 xl:h-56  px-3 py-3">

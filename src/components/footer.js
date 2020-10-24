@@ -1,8 +1,8 @@
 import React from "react"
 import { Title3, ButtonPri } from "../components/UseKit/kitCompos"
-import face from "../images/svg/face.svg"
-import insta from "../images/svg/insta.svg"
-import whats from "../images/svg/whats.svg"
+import Face from "../images/svg/face.svg"
+import Insta from "../images/svg/insta.svg"
+import Whats from "../images/svg/whats.svg"
 const Footer = () => {
   return (
     <footer className=" bg-purple py-3 px-3 w-full">
@@ -21,41 +21,35 @@ const Footer = () => {
             </section>
           </div>
           <div className="text-left mt-6 mb-6 text-silver  sm:text-left sm:px-12 lg:text-center ">
-            <Title3>Horarios de Operacion</Title3>
-            <section className="mt-4">
-              <ul className="text-left lg:text-center xl:text-left">
-                <li>Monday & Tuesday: Closed</li>
-                <li>Wednesday: 11am - 5pm</li>
-                <li> Thursday: 11am -7pm</li>
-                <li> Friday: 11am - 5pm</li>
-                <li>Saturday: 11am - 5pm</li>
-                <li> Sunday: 12pm - 4pm</li>
-              </ul>
-            </section>
+            <div className="flex justify-center">
+              <Title3>Horarios de Operacion</Title3>
+            </div>
+            <div className="flex justify-center">
+              <section className="mt-4">
+                <ul className="text-left lg:text-center xl:text-left">
+                  <li>Monday & Tuesday: Closed</li>
+                  <li>Wednesday: 11am - 5pm</li>
+                  <li> Thursday: 11am -7pm</li>
+                  <li> Friday: 11am - 5pm</li>
+                  <li>Saturday: 11am - 5pm</li>
+                  <li> Sunday: 12pm - 4pm</li>
+                </ul>
+              </section>
+            </div>
           </div>
           <div className=" mt-6 mb-6 text-silver  sm:text-left sm:px-12">
-            <Title3>Redes Sociales</Title3>
-            <div className="mt-4 inline-grid grid-cols-3 gap-x-4 lg:py-12">
+            <div className="flex justify-center">
+              <Title3>Redes Sociales</Title3>
+            </div>
+            <div className="mt-4 px-12  inline-grid grid-cols-3 gap-x-4 sm:px-0 lg:gap-x-12 lg:py-12">
               <span className="">
-                <img
-                  className="h-12 w-12"
-                  src={face}
-                  alt="facebook Hekse Coven"
-                />
+                <Face className="rounded-full h-16 w-16 bg-purplelight border border-solid border-purplelight" />
               </span>
               <span className="">
-                <img
-                  className="h-12 w-12"
-                  src={insta}
-                  alt="Instagram Hekse Coven"
-                />
+                <Insta className=" rounded-full h-16 w-16 bg-purplelight border border-solid border-purplelight " />
               </span>
               <span className="">
-                <img
-                  className="h-12 w-12"
-                  src={whats}
-                  alt="Whats Hekse Coven"
-                />
+                <Whats className="rounded-full h-16 w-16 bg-purplelight border border-solid border-purplelight" />
               </span>
             </div>
           </div>

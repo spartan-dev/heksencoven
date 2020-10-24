@@ -34,6 +34,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rue: {
+          include: `/images/svg/`,
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `HekseCoven`,

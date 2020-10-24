@@ -7,7 +7,10 @@ module.exports = {
   purge: ["./src/**/*.js"],
   target: "relaxed",
   theme: {
-  
+  fontFamily:{
+    'cinzel':['Cinzel',]
+  },
+ 
     extend: {
       colors: {
         purplelight: "#7e54c6",

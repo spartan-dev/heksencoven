@@ -27,6 +27,7 @@ const Index = (props) => {
           </div>
           <BackgroundImage
             className="hero"
+            //className="relative h-screen w-screen flex flex-col justify-center items-center"
             fluid={props.data.indexImage.childImageSharp.fluid}
           >
             <div
@@ -42,7 +43,7 @@ const Index = (props) => {
             >
               <Title1 color="true"> Liberi et Cantatus</Title1>
               <Title2>Witchcraft & Magic Supplies and witches stuff</Title2>
-              <ButtonPri width="large">
+              <ButtonPri width="medium">
                 Go now{" "}
                 <svg
                   className="w-6 h-6"

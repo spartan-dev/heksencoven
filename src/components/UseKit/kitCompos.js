@@ -61,5 +61,7 @@ export const ContenedorSection = styled.div`
   ${tw`  
   flex
   justify-center
+ -mb-12
+ xl:mb-20
  `};
 `

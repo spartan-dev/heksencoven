@@ -3,7 +3,7 @@ import mini from "../images/usein/VERSION1.png"
 const BlogCard = () => {
   return (
     <>
-      <div className="bg-white border  rounded-lg overflow-hidden w-64 ">
+      <article className="bg-white border  rounded-lg overflow-hidden w-64 ">
         <div className=" pb-2/3">
           <img
             className=" h-full  w-full object-cover"
@@ -31,7 +31,7 @@ const BlogCard = () => {
             <span className="text-gray-600 text-sm">mini texto srppresa</span>
           </div>
         </div>
-      </div>
+      </article>
     </>
   )
 }
