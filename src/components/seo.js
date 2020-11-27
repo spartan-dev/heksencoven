@@ -4,7 +4,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import ogImg from "../images/usein/VERSION1.png"
+import ogImg from "../images/usein/VERSION2.png"
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -19,7 +19,7 @@ function SEO({ description, lang, meta, title }) {
       }
     `
   )
-
+  console.log(title)
   const metaDescription = description || site.siteMetadata.description
 
   return (
@@ -60,11 +60,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image:height`,
-          content: 1200,
+          content: 1000,
         },
         {
           property: `og:image:width`,
-          content: 630,
+          content: 1000,
         },
         {
           name: `twitter:card`,

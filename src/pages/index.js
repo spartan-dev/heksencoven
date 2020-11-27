@@ -10,6 +10,9 @@ import InfoCard from "../components/infocard"
 import Separator from "../components/separator"
 import SectionShop from "../components/sectionshop"
 import Image from "../components/image"
+import Face from "../images/svg/face.svg"
+import Insta from "../images/svg/insta.svg"
+import Whats from "../images/svg/whats.svg"
 const Index = (props) => {
   return (
     <div>
@@ -31,7 +34,6 @@ const Index = (props) => {
             fluid={props.data.indexImage.childImageSharp.fluid}
           >
             <div
-              data-aos="zoom-in"
               className="py-3 px-3 w-10/12 absolute b-solid border-4
              border-palesilver  flex flex-col justify-center 
              items-center  shadow-md
@@ -42,8 +44,8 @@ const Index = (props) => {
              "
             >
               <Title1 color="true"> Liberi et Cantatus</Title1>
-              <Title2>Witchcraft & Magic Supplies and witches stuff</Title2>
-              <ButtonPri width="medium">
+              <Title2>Camino espiritual hacia la iluminacion</Title2>
+              {/*  <ButtonPri width="medium">
                 Bewicht
                 <svg
                   className="w-6 h-6"
@@ -59,10 +61,35 @@ const Index = (props) => {
                     d="M13 5l7 7-7 7M5 5l7 7-7 7"
                   ></path>
                 </svg>{" "}
-              </ButtonPri>
+              </ButtonPri> */}
+              <div className="mt-4 px-12  inline-grid grid-cols-3 gap-x-4 sm:px-0 md:gap-x-16 md:pr-4  lg:gap-x-12 lg:py-12">
+                <span className="">
+                  <a
+                    href="https://www.facebook.com/Heksecoven/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Face className="rounded-full h-16 w-16 bg-purplelight border border-solid border-purplelight" />
+                  </a>
+                </span>
+                <span className="">
+                  <a
+                    href="https://www.instagram.com/heksecoven/?igshid=1f6yqtjy2roqt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Insta className=" rounded-full h-16 w-16 bg-purplelight border border-solid border-purplelight " />
+                  </a>
+                </span>
+                <span className="">
+                  <a href="http://api.whatsapp.com/send?phone=525549367477&text=Hola!%20Quiero%20hacer%20magia%20en%20el%20coven!">
+                    <Whats className="rounded-full h-16 w-16 bg-purplelight border border-solid border-purplelight" />
+                  </a>
+                </span>
+              </div>
             </div>
           </BackgroundImage>
-          <div className="w-full absolute h-auto xl:w-full lg:w-full md:w-full sm:w-full bottom-0">
+          {/*    <div className="w-full absolute h-auto xl:w-full lg:w-full md:w-full sm:w-full bottom-0">
             <Image
               className="w-full absolute"
               filename="smokeBottom"
@@ -70,7 +97,7 @@ const Index = (props) => {
               objectFit="cover"
               objectPosition="50% 50%"
             />
-          </div>
+          </div> */}
         </Hero>
 
         <Separator title="HekseCoven" ornate="ornate3" />

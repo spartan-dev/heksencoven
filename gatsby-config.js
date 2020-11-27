@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `HekseCoven: La Wicca es un camino espiritual hacia la iluminacion.`,
+    title: `HekseCoven La Wicca es un camino espiritual.`,
     description: `El primer paso para entender la Wicca o antigua religion es conocer sus raices.`,
     author: `@spartan-dev`,
   },
