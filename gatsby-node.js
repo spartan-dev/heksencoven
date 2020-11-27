@@ -19,6 +19,7 @@ exports.createPages = ({ graphql, actions }) => {
         allContentfulBlog {
           edges {
             node {
+              slug
               tittle
             }
           }
@@ -31,12 +32,18 @@ exports.createPages = ({ graphql, actions }) => {
         console.log("Error con data contentful", result.errors)
       }
       const blogTemplate = path.resolve("./src/templates/blogTemplate.js")
-      result.data.allContentfulBlog.edges.forEach((blog) => {
+      const blogs = result.data.allContentfulBlog.edges
+      blogs.forEach((blog, index) => {
+        const previous =
+          index === blogs.length - 1 ? null : blogs[index + 1].node
+        const next = index === 0 ? null : blogs[index - 1].node
         createPage({
-          path: `/${blog.node.tittle}`,
+          path: `/${blog.node.slug}`,
           component: slash(blogTemplate),
           context: {
-            tittle: blog.node.tittle,
+            slug: blog.node.slug,
+            previous,
+            next,
           },
         })
       })

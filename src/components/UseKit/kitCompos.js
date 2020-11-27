@@ -10,14 +10,19 @@ export const Title2 = styled.div`
   ${(props) =>
     props.space
       ? tw` xl:text-4xl lg:text-4xl tracking-wide  px-3 py-3 text-purplelight text-center text-3xl font-bold tracking-widest leading-relaxed  mt-3 mb-3`
-      : tw` px-3 py-3  text-silver text-center text-3xl font-bold tracking-widest leading-relaxed mt-3 mb-3`};
+      : tw` 
+        sm:text-3xl
+        xl:text-5xl 
+        text-2xl 
+        text-silver text-center
+        font-bold tracking-widest
+        leading-relaxed mt-3 mb-3`};
   text-align: ${(props) =>
     props.align === "left"
       ? "left"
       : props.align === "right"
       ? "right"
       : "center"};
-  padding-left: 2rem;
   font-family: ${(props) => (props.font ? "Cinzel Bl" : "Cinzel")};
 `
 export const Title3 = styled.h3`

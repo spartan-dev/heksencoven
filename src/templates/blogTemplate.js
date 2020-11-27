@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Separador from "../components/separator"
 import Seo from "../components/seo"
 const BlogTemplate = ({ data }) => {
-  console.log(data, "hemos llegado")
+  console.log(data)
   return (
     <>
       <Layout>
@@ -25,19 +25,18 @@ const BlogTemplate = ({ data }) => {
 
 export default BlogTemplate
 
-export const blogquery = graphql`
-  query($tittle: String!) {
-    blog: contentfulBlog(tittle: { eq: $tittle }) {
+/* export const blogquery = graphql`
+  query BlogBySlug($slug:!String) {
+    contentfulBlog(slug:{eq:$slug}){
       tittle
-      firstBlood {
-        firstBlood
-      }
-      created
-      image {
-        fluid {
-          src
+      bodyPost{
+          bodyPost
         }
-      }
+        image{
+          fluid{
+            src
+          }
+        } 
     }
   }
-`
+` */

@@ -1,4 +1,21 @@
 {
   "css.validate": false,
-  "tailwindCSS.emmetCompletions": true
+  "tailwindCSS.emmetCompletions": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#670256",
+    "activityBar.activeBorder": "#687d02",
+    "activityBar.background": "#670256",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#687d02",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#35012c",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#670256",
+    "titleBar.activeBackground": "#35012c",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#35012c99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#35012c"
 }

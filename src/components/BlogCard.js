@@ -3,10 +3,10 @@ import mini from "../images/usein/VERSION1.png"
 const BlogCard = () => {
   return (
     <>
-      <article className="bg-white border  rounded-lg overflow-hidden w-64 ">
+      <article className="mb-24 bg-white border  rounded-lg overflow-hidden w-full sm:w-auto sm:h-auto ">
         <div className=" pb-2/3">
           <img
-            className=" h-full  w-full object-cover"
+            className=" h-48  w-full object-cover"
             src={mini}
             alt="hekse coven"
           />

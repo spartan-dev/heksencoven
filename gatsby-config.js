@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `HekseCoven`,
-    description: `A bare-bones Tailwind CSS + Emotion starter to kickoff your project.`,
+    title: `HekseCoven te brindamos calidad y comunidad en una manera calida , positiva y un excelente ambiente que mereces!`,
+    description: `El primer paso para entender la Wicca o antigua religion es conocer sus raices. Para cualquier creyente es un requisito basico el entender de donde provienen sus creencias  y aunque es lo basico , es lo que sobre todo se ignora.`,
     author: `@spartan-dev`,
   },
   plugins: [
@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
-        rue: {
-          include: `/images/svg/`,
+        rule: {
+          include: `${__dirname}/src/images/svg`,
         },
       },
     },
@@ -50,7 +50,7 @@ module.exports = {
         background_color: `#e0e2db;`,
         theme_color: `#7e54c6`,
         display: `standalone`,
-        icon: `${__dirname}/src/images/usein/favicon.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/src/images/usein/VERSION_3SIN_FONDO.png`, // This path is relative to the root of the site.
       },
     },
   ],

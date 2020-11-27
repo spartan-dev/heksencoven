@@ -5,7 +5,7 @@ const Separator = ({ title, ornate }) => {
   return (
     <ContenedorSection>
       <div
-        className={`absolute w-full   xl:w-full lg:w-full md:w-full sm:w-full rounded-lg`}
+        className={`absolute w-full xl:w-full lg:w-full md:w-full sm:w-full rounded-lg`}
       >
         <Image
           objectFit="cover"
@@ -15,16 +15,16 @@ const Separator = ({ title, ornate }) => {
           alt="smoke deco top"
         />
       </div>
-      <section className="absolute  max-w-full bg-pale-silver">
+      <section className="sm:mt-12 md:mt-16  lg:mt-20  xl:mt-32  absolute max-w-full bg-pale-silver  pt-2 mt-4">
         <Title2>{title}</Title2>
       </section>
       <div
         data-aos="zoom-in-up"
         data-aos-once="false"
-        className="w-5/6 sm:w-3/6 mt-0  sm:mt-4 h-40 lg:h-48 xl:h-64  flex justify-center "
+        className="mb-8 w-5/6 sm:w-3/6 mt-0  sm:mt-8 md:mt-12 lg:mt-20  h-40 lg:h-48 xl:h-64  flex justify-center "
       >
         <Image
-          className="w-full h-auto  xl:h-48 xl:mt-32"
+          className="w-full h-auto  xl:h-48 xl:mt-32 mt-12"
           filename={ornate}
           alt="deco-separador"
         />
