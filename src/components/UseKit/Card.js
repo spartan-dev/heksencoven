@@ -5,18 +5,25 @@ const Card = () => {
     <ContenedorSection style={{ padding: "2em" }}>
       <div className="bg-main  max-w-xl rounded-xl overflow-hidden shadow-lg mb-12 px-12 py-12">
         <div className="px-6 py-4">
-          <div className="text-palesilver font-bold text-xl mb-2">
-            The Coldest Sunset
+          <div className="text-palesilver font-bold text-3xl xl:text-4xl mb-2 font-fondamento">
+            Puedes Invocarnos Via Digital
           </div>
-          <p className="text-purplelight text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
+          <p className="text-purplelight text-base font-fondamento md:text-2xl xl:text-3xl">
+            Ya sea por Correo o por las redes Sociales, Puedes contactar al
+            Coven
           </p>
         </div>
         <div className="px-6 pt-4 pb-2">
-          <form className="w-full max-w-lg" action="">
+          <form
+            className="w-full max-w-lg"
+            action="/"
+            name="contact"
+            method="post"
+            data-netlify-honeypot="bot-field"
+            data-netlify="true"
+          >
             <div className="flex flex-wrap -mx-3 mb-6">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                 <label
                   className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
@@ -29,6 +36,7 @@ const Card = () => {
                   id="grid-first-name"
                   type="text"
                   placeholder="Bruj@s"
+                  name="nombre"
                 />
               </div>
               <div className="w-full md:w-1/2 px-3">
@@ -43,6 +51,7 @@ const Card = () => {
                   id="grid-last-name"
                   type="text"
                   placeholder="O Ponga su apodo!"
+                  name="apellido"
                 />
               </div>
             </div>
@@ -59,7 +68,8 @@ const Card = () => {
                   className="mb-8 appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   id="email"
                   type="text"
-                  placeholder="heksecoven@gmail.com"
+                  placeholder="tucorreo@gmail.com"
+                  name="email"
                 />
               </div>
               <div className="w-full md:w-full px-3 mb-6 md:mb-0">
@@ -74,15 +84,20 @@ const Card = () => {
                   type="text"
                   className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                   placeholder="Mensaje de texto"
+                  name="mensaje"
                 />
               </div>
             </div>
             <div className="">
               <button
                 type="submit"
-                className="w-full inline-block bg-purplelight rounded-full px-3 py-1 text-xl font-semibold text-purple mr-2 mb-2"
+                className="
+                w-full inline-block bg-purplelight rounded-full px-3 h-12 
+                text-xl font-fondamento font-semibold text-purple mr-2 mb-2 
+                hover:bg-purple hover:text-purplelight
+                "
               >
-                Enviar Correo
+                Enviar
               </button>
             </div>
           </form>

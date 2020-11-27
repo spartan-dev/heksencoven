@@ -40,7 +40,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:title`,
-          content: metaDescription,
+          content: title,
         },
         {
           property: `og:description`,
@@ -60,11 +60,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image:height`,
-          content: 140,
+          content: 1200,
         },
         {
           property: `og:image:width`,
-          content: 512,
+          content: 630,
         },
         {
           name: `twitter:card`,

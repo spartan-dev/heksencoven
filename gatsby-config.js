@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `HekseCoven te brindamos calidad y comunidad en una manera calida , positiva y un excelente ambiente que mereces!`,
-    description: `El primer paso para entender la Wicca o antigua religion es conocer sus raices. Para cualquier creyente es un requisito basico el entender de donde provienen sus creencias  y aunque es lo basico , es lo que sobre todo se ignora.`,
+    title: `HekseCoven: La Wicca es un camino espiritual hacia la iluminacion.`,
+    description: `El primer paso para entender la Wicca o antigua religion es conocer sus raices.`,
     author: `@spartan-dev`,
   },
   plugins: [

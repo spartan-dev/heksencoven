@@ -28,16 +28,22 @@ const Header = () => {
       >
         Contacto
       </Link>
+      <Link
+        to="/colab"
+        className="mt-1 block px-3 py-2 text-gray-800 font-semibold hover:bg-gray-800  hover:text-white rounded sm:mt-0 sm:ml-2"
+      >
+        Colaboracion
+      </Link>
     </div>
   )
   return (
     <header className="bg-black h-32 flex justify-between sm:flex sm:justify-between items-center sm:px-4 py-3">
       <div className="flex items-center justify-between px-3 py-3 sm:p-0 ">
         <Link to="/">
-          <div className="w-56 h-56  sm:w-56 sm:h-56  xl:w-56 xl:h-56  px-3 py-3">
+          <div className="w-48 h-48  sm:w-48 sm:h-48  xl:w-48 xl:h-48  px-3 py-3">
             <Image
               className="w-full"
-              filename="VERSION_1SIN_FONDO"
+              filename="lighthekse.png"
               alt="Hekse Coven"
               objectFit="cover"
               objectPosition="50% 50%"
@@ -101,6 +107,12 @@ const Header = () => {
             className="mt-1 text-2xl block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
           >
             Contacto
+          </Link>
+          <Link
+            to="/colab"
+            className="mt-1 text-2xl block px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded sm:mt-0 sm:ml-2"
+          >
+            Colaboracion
           </Link>
         </div>
       )}

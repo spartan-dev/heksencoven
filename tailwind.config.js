@@ -8,7 +8,8 @@ module.exports = {
   target: "relaxed",
   theme: {
   fontFamily:{
-    'cinzel':['Cinzel',]
+    'cinzel':['Cinzel',],
+    'fondamento':['Fondamento']
   },
  
     extend: {

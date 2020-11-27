@@ -44,7 +44,7 @@ const Index = (props) => {
               <Title1 color="true"> Liberi et Cantatus</Title1>
               <Title2>Witchcraft & Magic Supplies and witches stuff</Title2>
               <ButtonPri width="medium">
-                Go now{" "}
+                Bewicht
                 <svg
                   className="w-6 h-6"
                   fill="none"
@@ -74,9 +74,26 @@ const Index = (props) => {
         </Hero>
 
         <Separator title="HekseCoven" ornate="ornate3" />
-        <InfoCard position="left" image={props.data.infocard1} />
-        <InfoCard position="right" image={props.data.infocard2} />
-        <Separator title="Suscripciones" ornate="ornate2" />
+        <InfoCard
+          position="left"
+          image={props.data.infocard1}
+          title="Hekse Coven"
+          content="El primer paso para entender la Wicca o antigua religion es conocer sus raices. Para cualquier creyente es un requisito basico el entender de donde provienen sus creencias  y aunque es lo basico , es lo que sobre todo se ignora."
+        />
+        <InfoCard
+          position="right"
+          image={props.data.infocard2}
+          title="Que es la Wicca?"
+          content="Es un camino espiritual hacia la iluminacion por medio de la veneracion del Dios y la Diosa, camino orientado hacia la naturaleza, mezclando la tradicion y lo eclectico."
+        />
+        <Separator title="La Wicca" ornate="ornate2" />
+        <InfoCard
+          position="left"
+          image={props.data.infocard1}
+          title="Wicca"
+          content="Wicca promueve el pensamiento libre, la creatividad artistica, la indivdualidad y crecimiento personal, espiritual y psiquico. Es una celebracion del ciclo de las estaciones y la vida misma.
+          Wicca es tan antigua como nueva."
+        />
         <SectionShop />
       </Layout>
     </div>
