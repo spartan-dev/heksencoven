@@ -1,23 +1,36 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Separador from "../components/separator"
 import Seo from "../components/seo"
-const BlogTemplate = ({ data }) => {
-  console.log(data)
+const BlogTemplate = ({ data, pageContext }) => {
+  console.log(data, pageContext, "si llegamos ??")
+  const { tittle, bodyPost, image, createdAt } = data.contentfulBlog
+  const { next, previous, slug } = pageContext
   return (
     <>
       <Layout>
         <Seo title="temporal blog" />
-        <Separador title="Titulo Blog" ornate="ornate2" />
-        <h1>Blog recibe props</h1>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo,
-          sapiente excepturi. Ab commodi sunt nulla similique ipsam a in dolor,
-          tempore, corporis esse dolorum nam velit illum voluptatibus
-          perspiciatis vitae.
-        </p>
-        <span>aca va la fecha supongo ??</span>
+        <Separador title={tittle} ornate="ornate2" />
+        <h1>{tittle}</h1>
+        <p>{bodyPost.bodyPost}</p>
+        <span>{createdAt}</span>
+        <ul>
+          <li>
+            {previous && (
+              <Link to={`/blog/${previous.slug}`}>
+                <span>{previous.tittle}</span>
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={`/blog/${next.slug}`}>
+                <span>{next.tittle}</span>
+              </Link>
+            )}
+          </li>
+        </ul>
       </Layout>
     </>
   )
@@ -25,18 +38,19 @@ const BlogTemplate = ({ data }) => {
 
 export default BlogTemplate
 
-/* export const blogquery = graphql`
-  query BlogBySlug($slug:!String) {
-    contentfulBlog(slug:{eq:$slug}){
+export const blogquery = graphql`
+  query blogBySlug($slug: String!) {
+    contentfulBlog(slug: { eq: $slug }) {
       tittle
-      bodyPost{
-          bodyPost
+      createdAt
+      bodyPost {
+        bodyPost
+      }
+      image {
+        fluid {
+          src
         }
-        image{
-          fluid{
-            src
-          }
-        } 
+      }
     }
   }
-` */
+`

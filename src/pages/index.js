@@ -17,7 +17,7 @@ const Index = (props) => {
   return (
     <div>
       <Layout>
-        <Seo title="Home" />
+        <Seo title="Hekse Coven La Wicca es un camino espiritual." />
         <Hero>
           <div className="absolute w-full xl:w-full  h-auto lg:w-full md:w-full sm:w-full">
             <Image
@@ -65,6 +65,7 @@ const Index = (props) => {
               <div className="mt-4 px-12  inline-grid grid-cols-3 gap-x-4 sm:px-0 md:gap-x-16 md:pr-4  lg:gap-x-12 lg:py-12">
                 <span className="">
                   <a
+                    aria-label="facebook"
                     href="https://www.facebook.com/Heksecoven/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -74,6 +75,7 @@ const Index = (props) => {
                 </span>
                 <span className="">
                   <a
+                    aria-label="instagram"
                     href="https://www.instagram.com/heksecoven/?igshid=1f6yqtjy2roqt"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,7 +84,10 @@ const Index = (props) => {
                   </a>
                 </span>
                 <span className="">
-                  <a href="http://api.whatsapp.com/send?phone=525549367477&text=Hola!%20Quiero%20hacer%20magia%20en%20el%20coven!">
+                  <a
+                    aria-label="whatsapp"
+                    href="http://api.whatsapp.com/send?phone=525549367477&text=Hola!%20Quiero%20hacer%20magia%20en%20el%20coven!"
+                  >
                     <Whats className="rounded-full h-16 w-16 bg-purplelight border border-solid border-purplelight" />
                   </a>
                 </span>

@@ -8,22 +8,27 @@
 @font-face {
   font-family: Fondamento;
   src: url("../fonts/Fondamento/Fondamento-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Fondamento I;
   src: url("../fonts/Fondamento/Fondamento-Italic.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Cinzel;
   src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Regular.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Cinzel B;
   src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Black.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: Cinzel Bl;
   src: url("../fonts/Cinzel_Decorative/CinzelDecorative-Bold.ttf");
+  font-display: swap;
 }
 
 :root {

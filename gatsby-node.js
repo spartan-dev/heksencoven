@@ -12,7 +12,7 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-
+  const blogTemplate = path.resolve("./src/templates/blogTemplate.js")
   return graphql(
     `
       {
@@ -31,15 +31,16 @@ exports.createPages = ({ graphql, actions }) => {
       if (result.errors) {
         console.log("Error con data contentful", result.errors)
       }
-      const blogTemplate = path.resolve("./src/templates/blogTemplate.js")
+
       const blogs = result.data.allContentfulBlog.edges
       blogs.forEach((blog, index) => {
+        console.log(blog, "en node")
         const previous =
           index === blogs.length - 1 ? null : blogs[index + 1].node
         const next = index === 0 ? null : blogs[index - 1].node
         createPage({
-          path: `/${blog.node.slug}`,
-          component: slash(blogTemplate),
+          path: `blog/${blog.node.slug}`,
+          component: blogTemplate,
           context: {
             slug: blog.node.slug,
             previous,

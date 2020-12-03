@@ -50,7 +50,7 @@ const InfoCard = ({ image, position, content, title }) => {
             data-aos="fade-left"
             className="md:w-1/2 rounded-lg font-cinzel  bg-purplelight  flex flex-col items-center   px-6 py-2  bg-gradient-to-l from-purple "
           >
-            <h3 className="text-2xl sm:3xl  xl:text-6xl font-extrabold">
+            <h3 className=" text-2xl sm:3xl  xl:text-6xl font-extrabold">
               {title}
             </h3>
             <p className="text-base   text-palesilver sm:text-xl md:text-2xl xl:text-4xl">

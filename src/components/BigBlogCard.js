@@ -2,7 +2,6 @@ import React from "react"
 import mini from "../images/usein/VERSION1.png"
 import Image from "gatsby-image"
 const BigCard = ({ blog }) => {
-  console.log(blog, "interno")
   return (
     <div className="mb-24 w-12/12">
       <div className="flex justify-center items-center h-auto">

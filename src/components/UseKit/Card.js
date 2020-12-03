@@ -90,6 +90,7 @@ const Card = () => {
             </div>
             <div className="">
               <button
+                aria-label="enviar"
                 type="submit"
                 className="
                 w-full inline-block bg-purplelight rounded-full px-3 h-12 
@@ -97,7 +98,7 @@ const Card = () => {
                 hover:bg-purple hover:text-purplelight
                 "
               >
-                Enviar
+                <span>Enviar</span>
               </button>
             </div>
           </form>

@@ -1,6 +1,8 @@
 import React from "react"
 import mini from "../images/usein/VERSION1.png"
-const BlogCard = () => {
+import { Link } from "gatsby"
+const BlogCard = ({ blog }) => {
+  const { slug, tittle, image, bodyPost, createdAt } = blog.node
   return (
     <>
       <article className="mb-24 bg-white border  rounded-lg overflow-hidden w-full sm:w-auto sm:h-auto ">
@@ -14,21 +16,22 @@ const BlogCard = () => {
 
         <div className="p-6">
           <div className="text-gray-600 text-xs uppercase font-semibold tracking-wide">
-            more text to value
+            Tiempo de lectura
           </div>
           <h4 className="font-semibold text-lg leading-tight truncate">
-            texto para mini titulo
+            {tittle}
           </h4>
 
           <div className="mt-1">
-            <p>otro mini texto quizae</p>
-            <span className="text-gray-600 text-sm "> el date</span>
+            <p>{bodyPost.bodyPost.slice(0, 100)}</p>
+            <span className="text-gray-600 text-sm "> {createdAt}</span>
           </div>
           <div className="mt-4 ">
-            <span className="text-teal-600 font-semibold">
-              intro o descripcion
-            </span>
-            <span className="text-gray-600 text-sm">mini texto srppresa</span>
+            <Link to={slug}>
+              <span className="text-teal-600 font-semibold">
+                Leer entrada o tiempo de lectura
+              </span>
+            </Link>
           </div>
         </div>
       </article>

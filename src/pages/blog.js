@@ -9,8 +9,7 @@ import Seo from "../components/seo"
 // grid grid-flow-col auto-cols-max
 const Blog = ({ data }) => {
   const blogs = data.blogs.edges
-  // console.log(blogs, "los blogs")
-
+  const allblogs = blogs.slice(1, blogs.length)
   return (
     <div>
       <Layout>
@@ -22,12 +21,9 @@ const Blog = ({ data }) => {
               <BigCard blog={blogs[0]} />
             </div>
             <div className="w-full">
-              <BlogCard className="" />
-              <BlogCard className="" />
-              <BlogCard className="" />
-              <BlogCard className="" />
-              <BlogCard className="" />
-              <BlogCard className="" />
+              {allblogs.map((blog, idx) => (
+                <BlogCard key={idx} blog={blog} className="" />
+              ))}
             </div>
           </div>
         </div>

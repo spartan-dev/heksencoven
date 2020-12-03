@@ -17,7 +17,9 @@ const SectionShop = () => {
       <div className="pl-8 pb-16  sm:w-full sm:pl-8 lg:w-full lg:place-items-end lg:pb-8 pr-8  flex justify-center items-center xl:w-2/5 xl:flex xl:justify-end xl:flex-col xl:pb-16">
         <Link to="/colab">
           {" "}
-          <ButtonPri>Colaboradores</ButtonPri>
+          <ButtonPri aria-label="colaboradores">
+            <span>Colaboradores</span>
+          </ButtonPri>
         </Link>
       </div>
     </div>
