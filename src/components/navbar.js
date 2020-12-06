@@ -14,7 +14,7 @@ const Header = () => {
         to="/about"
         className="block px-3 py-2 text-gray-800 font-semibold hover:bg-gray-800 hover:text-white rounded"
       >
-        Cueva mobile
+        Cueva
       </Link>
       <Link
         to="/blog"

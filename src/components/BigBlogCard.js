@@ -1,12 +1,14 @@
 import React from "react"
-import mini from "../images/usein/VERSION1.png"
+import { Link } from "gatsby"
 import Image from "gatsby-image"
+import moment from "moment"
 const BigCard = ({ blog }) => {
+  const { slug, tittle, image, bodyPost, createdAt } = blog.node
   return (
     <div className="mb-24 w-12/12">
       <div className="flex justify-center items-center h-auto">
         <Image
-          className="object-cover rounded-full shadow-md"
+          className="shadow-md"
           fluid={blog.node.image.fluid}
           alt={blog.node.tittle}
           // style={{ height: "100%", width: "100%" }}
@@ -23,19 +25,19 @@ const BigCard = ({ blog }) => {
             Tiempo de lectura
           </div>
           <h4 className="font-semibold text-lg leading-tight truncate">
-            {blog.node.tittle}
+            {tittle}
           </h4>
 
           <div className="mt-1">
-            <p>{blog.node.bodyPost.bodyPost.slice(0, 100)}...</p>
+            <p>{bodyPost.bodyPost.slice(0, 100)}...</p>
             <span className="text-gray-600 text-sm ">
-              {blog.node.createdAt}
+              {moment(createdAt).format("ddd, MMMM D, YYYY, hh:mm a")}
             </span>
           </div>
           <div className="mt-4 ">
-            <span className="text-teal-600 font-semibold">
-              Leer entrada o tiempo de lectura
-            </span>
+            <Link to={slug}>
+              <span className="text-teal-600 font-semibold">Leer entrada</span>
+            </Link>
           </div>
         </div>
       </div>
