@@ -17,6 +17,12 @@ const Header = () => {
         Cueva
       </Link>
       <Link
+        to="/eventos"
+        className="block px-3 py-2 text-gray-800 font-semibold hover:bg-gray-800 hover:text-white rounded"
+      >
+        Eventos
+      </Link>
+      <Link
         to="/blog"
         className="mt-1 block px-3 py-2 text-gray-800 font-semibold hover:bg-gray-800  hover:text-white rounded sm:mt-0 sm:ml-2"
       >
@@ -95,6 +101,12 @@ const Header = () => {
             className="block text-2xl px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded"
           >
             Cueva
+          </Link>
+          <Link
+            to="/eventos"
+            className="block text-2xl px-2 py-1 text-palesilver font-semibold hover:bg-gray-700 rounded"
+          >
+            Eventos
           </Link>
           <Link
             to="/blog"
