@@ -14,7 +14,7 @@ const BlogTemplate = ({ data, pageContext }) => {
     <>
       <Layout>
         <Seo title="Blog" />
-        <Separador title={tittle} ornate="ornate2" />
+        {/* <Separador title={tittle} ornate="ornate2" />
         <div className=" flex justify-center mb-16 p-8">
           <Img
             className="object-cover max-w-5xl rounded-3xl shadow-md"
@@ -87,7 +87,7 @@ const BlogTemplate = ({ data, pageContext }) => {
               )}
             </li>
           </ul>
-        </div>
+        </div> */}
       </Layout>
     </>
   )
@@ -95,7 +95,7 @@ const BlogTemplate = ({ data, pageContext }) => {
 
 export default BlogTemplate
 
-export const blogquery = graphql`
+/* export const blogquery = graphql`
   query blogBySlug($slug: String!) {
     contentfulBlog(slug: { eq: $slug }) {
       tittle
@@ -110,4 +110,4 @@ export const blogquery = graphql`
       }
     }
   }
-`
+` */

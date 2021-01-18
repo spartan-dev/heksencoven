@@ -17,26 +17,26 @@ const Eventos = ({ data }) => {
       <div>
         <Title2>Diciembre</Title2>
       </div>
-      <div className="w-full h-auto flex flex-col justify-center items-center">
-        {events.edges.map((event) => {
-          return (
-            <div
-              data-aos="fade-left"
-              className=" h-auto w-auto mb-16 flex flex-col justify-center items-center md:w-1/2 md:ml-4 md:h-auto"
-            >
-              <Img
-                className="rounded-lg"
-                fluid={event.node.childImageSharp.fluid}
-                alt={event.node.childImageSharp.fluid.originalName}
-                style={{ height: "100%", width: "100%" }}
-                imgStyle={{
-                  objectFit: "cover",
-                }}
-              />
-            </div>
-          )
-        })}
-      </div>
+      {/* <div className="w-full h-auto flex flex-row justify-center items-center"> */}
+      {events.edges.map((event) => {
+        return (
+          <div
+            data-aos="fade-left"
+            className=" h-auto w-auto mb-16 flex flex-col justify-center items-center  md:ml-4"
+          >
+            <Img
+              className="rounded-lg"
+              fluid={event.node.childImageSharp.fluid}
+              alt={event.node.childImageSharp.fluid.originalName}
+              style={{ height: "70%", width: "70%" }}
+              imgStyle={{
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        )
+      })}
+      {/*  </div> */}
     </Layout>
   )
 }

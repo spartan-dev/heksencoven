@@ -10,17 +10,17 @@ exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
   }
 }
 
-exports.createPages = ({ graphql, actions }) => {
+/* exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const blogTemplate = path.resolve("./src/templates/blogTemplate.js")
   return graphql(
     `
       {
-        allContentfulBlog {
+        allContentfulPost {
           edges {
             node {
               slug
-              tittle
+              Titulo
             }
           }
         }
@@ -53,3 +53,4 @@ exports.createPages = ({ graphql, actions }) => {
       console.log(`Error con Contentful ${error}`)
     })
 }
+ */

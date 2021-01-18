@@ -10,8 +10,8 @@ import { Title2 } from "../components/UseKit/kitCompos"
 //className="px-12 mb-12 grid grid-rows-3 grid-flow-col gap-10"
 // grid grid-flow-col auto-cols-max
 const Blog = ({ data }) => {
-  const blogs = data.blogs.edges
-  const allblogs = blogs.slice(1, blogs.length)
+  /*  const blogs = data.blogs.edges
+  const allblogs = blogs.slice(1, blogs.length) */
   return (
     <div>
       <Layout>
@@ -39,7 +39,7 @@ const Blog = ({ data }) => {
 }
 
 export default Blog
-export const blogs = graphql`
+/* export const blogs = graphql`
   query {
     blogs: allContentfulBlog {
       edges {
@@ -60,3 +60,4 @@ export const blogs = graphql`
     }
   }
 `
+ */

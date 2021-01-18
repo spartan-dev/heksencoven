@@ -9,11 +9,11 @@ export default function Layout({ children }) {
     AOS.init()
   })
   return (
-    <>
+    <main>
       <GlobalStyles />
       <Header />
       {children}
       <Footer />
-    </>
+    </main>
   )
 }
